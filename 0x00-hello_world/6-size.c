@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - this sdesribes the main function of the code
+ * main - this desribes the main function of the code
  * Return: 0
  	*/
 int main(void)
@@ -18,4 +18,3 @@ int main(void)
 	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(e));
 	return (0);
 }
-
