@@ -1,14 +1,17 @@
 #include "main.h"
 /**
-*_isalpha - checks for alphabets
-*@c: function parameter
-*Return: 1 or 0
-*/
+ * _isalpha - Checks charcter
+ * @c: The charceter
+ * Return: 1 for all
+ */
 
 int _isalpha(int c)
+
 {
-		if ((c >= 'a' && c <= 'z') || (c >= 'a' && c <= 'z'))
-			return (1);
-		else
-			return (0);
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	{
+		return (1);
+	}
+	return (0);
 }
+
