@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-*isalpha - checks for alphabets
+*_isalpha - checks for alphabets
 *@c: function parameter
-* Return: 1 or 0
+*Return: 1 or 0
 */
 
 int _isalpha(int c)
