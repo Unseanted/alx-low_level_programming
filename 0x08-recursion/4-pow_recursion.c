@@ -5,7 +5,6 @@
  * @y: parameter power
  * Return: the result of the power
  */
-
 int _pow_recursion(int x, int y)
 {
 	if (y < 0)
@@ -16,5 +15,5 @@ int _pow_recursion(int x, int y)
 	{
 		return (1);
 	}
-	return (x * _pow_recursion (x, y - 1));
+	return (x * _pow_recursion(x, y - 1));
 }
