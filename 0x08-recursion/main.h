@@ -12,5 +12,7 @@ int _putchar(char c);
 int  sqrt_a(int a, int b);
 int prime_a(int a, int b);
 int prime_a(int a, int b);
+int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
 
 #endif
