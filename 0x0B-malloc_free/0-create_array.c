@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 /**
  * create_array - function name
@@ -25,7 +24,7 @@ char *create_array(unsigned int size, char c)
 
 	for (i = 0; i < size; i++)
 	{
-		ptr[1] = c;
+		ptr[i] = c;
 	}
 	return (ptr);
 }
