@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
 /**
 * print_all - print any arguments provided to a function
 * @format: the argument specifier
@@ -7,8 +8,8 @@
 */
 void print_all(const char * const format, ...)
 {
-	int i; /* declare variables and var_arg datatype */
-	int check_stat = 0;
+	int i;
+	int check_stat = 0; /*initializes check_stat to 0 */
 	char *str;
 	va_list spc;
 
@@ -28,7 +29,7 @@ void print_all(const char * const format, ...)
 			check_stat = 0;
 			break;
 		case 'c':
-			printf("%c", (char) va_arg(spc, int));
+			printf("%c", (char) va_arg(spc, int)); /* cast to char */
 			check_stat = 0;
 			break;
 		case 's':
