@@ -7,9 +7,11 @@
 */
 void print_all(const char * const format, ...)
 {
-	int i, check_stat; /* declare variables and var_arg datatype */
+	int i = 0;
+	int check_stat = 0; /* declare variables and var_arg datatype */
 	char *str;
 	va_list spc;
+
 
 	va_start(spc, format); /* initialize var arguments */
 
@@ -27,7 +29,7 @@ void print_all(const char * const format, ...)
 				check_stat = 0;
 				break;
 			case 'c':
-				printf("%c", va_arg(spc, int));
+				printf("%c",(char) va_arg(spc, int));
 				check_stat = 0;
 				break;
 			case 's':
